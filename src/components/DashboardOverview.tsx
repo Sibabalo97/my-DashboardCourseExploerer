@@ -2,7 +2,7 @@
 import React from 'react';
 import { Calendar, Users, TrendingUp, PlayCircle } from 'lucide-react';
 import { Card } from './ui/card';
-import { Button } from './ui/button';
+import { Button } from "@/components/ui/button"
 import { Badge } from './ui/badge';
 import { Progress } from './ui/progress';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
@@ -232,9 +232,9 @@ const DashboardOverview = () => {
                 <p className="text-foreground font-medium">{tutor.name}</p>
                 <p className="text-muted-foreground text-sm">{tutor.subject}</p>
               </div>
-              <Button size="icon" variant="outline" className="ml-4">
+              <button className="ml-4 inline-flex items-center justify-center rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10">
                 <Users className="w-4 h-4" />
-              </Button>
+              </button>
             </div>
           ))}
         </div>

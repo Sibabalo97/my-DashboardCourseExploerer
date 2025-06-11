@@ -68,9 +68,8 @@ const CourseFilters: React.FC<CourseFiltersProps> = ({
 
         {/* Favorites Toggle */}
         <Button
-          variant={showFavoritesOnly ? "default" : "outline"}
           onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
-          className="whitespace-nowrap"
+          className={`whitespace-nowrap ${showFavoritesOnly ? 'bg-blue-500 text-white' : 'border border-gray-300'}`}
         >
           {showFavoritesOnly ? 'Show All' : 'Favorites Only'}
         </Button>
